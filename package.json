@@ -1,0 +1,13 @@
+{
+  "name": "stga",
+  "version": "1.0.0",
+  "description": "Discord bot to play AoE II taunts in audio channel",
+  "scripts": {},
+  "author": "Mouthon",
+  "license": "WTFPL",
+  "dependencies": {
+    "@discordjs/opus": "^0.1.0",
+    "discord.js": "^12.1.1",
+    "lodash": "^4.17.15"
+  }
+}
