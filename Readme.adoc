@@ -1,0 +1,45 @@
+= Readme
+Quentin B
+v0.0.1, 2020/04/19
+:toc:
+:icons: font
+:sectnums:
+
+The official Pimousse bot which plays AoE II taunts in a discord audio channel
+
+== Requirements
+
+`Discord JS` and `Opus` requires `ffmpeg` to play sounds in the audio channels.
+
+link:http://ffmpeg.org/download.html[get ffmpeg]
+
+You must own a copy of Age of Empire II and copy the files you find in `Age2HD/resources/<language>/sound/taunt` in a `taunt` folder at the root of the bot's folder. Leave the audio filenames untouched.
+
+== Installation
+
+Stga runs with node 12.16. If you use link:https://github.com/nvm-sh/nvm[nvm], there's a `.nvmrc` file you can use.
+
+[source,shell]
+----
+npm ci
+----
+
+Rename `auth.json.example` to `auth.json` and fill the `"token"` attribute with your bot's token.
+
+== Run
+
+[source,shell]
+----
+node bot.js
+----
+
+== Commands
+
+The command prefix is *:stga:*
+
+join <Channel>:: Joins the vocal channel (Channel name is case sensitive)
+leave:: Leave the vocal channel used by the bot
+
+=== Play sound
+
+If you loaded the original taunts, their names are `x description.mp3` where x is the number of the taunt. The bot will aknowledge any number between *1* and the last taunt number and play the subsequently named sound file.
